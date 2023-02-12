@@ -1,0 +1,14 @@
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.700);
+    border: 3px solid grey;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 530px;
+    left: 980px;
+    cursor: not-allowed;
+    animation: roam-here-and-theree 1.5s linear infinite;

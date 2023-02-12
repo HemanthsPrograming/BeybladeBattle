@@ -1,0 +1,861 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.oval-part {
+    height: 770px;
+    width: 1500px;
+    background: #2f374a94;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    border-radius: 50%;
+    border: 5px solid grey;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    box-shadow: 0 0 0px #2f374a;
+}
+.beybowl {
+    height: 700px;
+    width: 730px;
+    background: #1f253385;
+    border-radius: 50%;
+    position: relative;
+    top: 65px;
+    left: 500px;
+    border: 4px solid grey;
+    box-shadow: 0 0 1px grey;
+}
+
+.inner-bowl {
+    height: 630px;
+    width: 660px;
+    background: #3640598e;
+    border-radius: 50%;
+    position: absolute;
+    top: 110px;
+    left: 545px;
+    border: 4px solid grey;
+    box-shadow: inset 0 0 1px grey;
+}
+
+.line-1 {
+    height: 630px;
+    width: 6px;
+    background: rgb(124, 45, 45);
+    position: absolute;
+    top: 114px;
+    left: 875px;
+    box-shadow: 0 0 0px grey;
+    border-radius: 2px;
+}
+.line-2 {
+    height: 660px;
+    width: 6px;
+    background: rgb(124, 45, 45);
+    position: absolute;
+    top: 102px;
+    left: 876px;
+    box-shadow: 0 0 0px grey;
+    border-radius: 2px;
+    transform: rotate(90deg);
+}
+.circle {
+    height: 170px;
+    width: 170px;
+    background: transparent;
+    border: 6px solid #546c94;
+    border-radius: 50%;
+    position: absolute;
+    top: 338px;
+    left: 787px;
+    box-shadow: 0 0 0px grey;
+}
+
+.lane-1 {
+    height: 170px;
+    width: 170px;
+    background: transparent;
+    border: 4px solid #538991;
+    border-radius: 50%;
+    position: absolute;
+    top: 340px;
+    left: 333px;
+    box-shadow: inset 0 0 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    font-size: 10px;
+    color: rgb(177, 177, 177);
+}
+
+.lane-2 {
+    height: 170px;
+    width: 170px;
+    background: transparent;
+    border: 4px solid #538991;
+    border-radius: 50%;
+    position: absolute;
+    top: 340px;
+    left: 1242px;
+    box-shadow: inset 0 0 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    font-size: 10px;
+    color: rgb(177, 177, 177);
+}
+
+.functionalities .powerbtn {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: rgb(68, 76, 117);
+    color: white;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.functionalities .powerbtn:hover {
+    background-color: rgb(97, 104, 141);
+}
+
+.openSidemenu {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: rgb(68, 76, 117);
+    color: white;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.openSidemenu:hover {
+    background-color: rgb(97, 104, 141);
+}
+
+.sidemenu {
+    height: 100%;
+    width: 540px;
+    background-color: #2f374a93;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 70px black;
+    animation: slide-in 0.5s linear;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+@keyframes slide-in{
+    0% {
+        right: -560px;
+    }
+    25% {
+        right: -280px;
+    }
+    50% {
+        right: -140px;
+    }
+    75% {
+        right: -70px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+
+.beys1 img {
+    height: 150px;
+}
+
+
+
+.beys1 .valkrey1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys1 .valkrey1:hover {
+    background: white;
+    color: #000;
+}
+
+.beys1 .fafnir1 {
+    height: 200px;
+    position: relative;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys1 .fafnir1:hover {
+    background: white;
+    color: #000;
+}
+.beys1 .spryzen1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys1 .spryzen1:hover {
+    background: white;
+    color: #000;
+}
+
+.beys1 .luinor1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys1 .luinor1:hover {
+    background: white;
+    color: #000;
+}
+
+.beys1 .achilles1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys1 .achilles1:hover {
+    background: white;
+    color: #000;
+}
+
+.beys1 .helios1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys1 .helios1:hover {
+    background: white;
+    color: #000;
+}
+
+.beys1 .hyperion1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys1 .hyperion1:hover {
+    background: white;
+    color: #000;
+}
+
+.beys1 .salamander1 {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys1 .salamander1:hover {
+    background: #fff;
+    color: #000;
+}
+
+.beys1 {
+    height: 600px;
+    width: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    font-size: 25px;
+}
+
+.closemenu {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.closemenu h4 {
+    color: white;
+}
+
+.closemenu:hover {
+    background: #8f8f8f;
+}
+
+/*Break-1*/
+
+.beys img {
+    height: 150px;
+}
+
+.beys .valkrey {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys .valkrey:hover {
+    background: white;
+    color: #000;
+}
+
+.beys .fafnir {
+    height: 200px;
+    position: relative;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys .fafnir:hover {
+    background: white;
+    color: #000;
+}
+.beys .spryzen {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys .spryzen:hover {
+    background: white;
+    color: #000;
+}
+
+.beys .luinor {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys .luinor:hover {
+    background: white;
+    color: #000;
+}
+
+.beys .achilles {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys .achilles:hover {
+    background: white;
+    color: #000;
+}
+
+.beys .helios {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys .helios:hover {
+    background: white;
+    color: #000;
+}
+
+.beys .hyperion {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.beys .hyperion:hover {
+    background: white;
+    color: #000;
+}
+
+.beys .salamander {
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.beys .salamander:hover {
+    background: white;
+    color: #000;
+}
+
+.beys {
+    height: 600px;
+    width: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    font-size: 25px;
+}
+
+.bey1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.700);
+    border: 3px solid grey;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 230px;
+    left: 670px;
+    cursor: not-allowed;
+}
+.bey2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.700);
+    border: 3px solid grey;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 530px;
+    left: 980px;
+    cursor: not-allowed;
+    animation: roam-here-and-theree 1s linear infinite;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes left-spinning {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes roam-here-and-there {
+    0% {
+        left: 980px;
+        top: 530px;
+    }
+    5% {
+        left: 800px;
+        top: 330px;
+    }
+    10% {
+        left: 700px;
+        top: 230px;
+
+    }
+    15% {
+        left: 690px;
+        top: 180px;
+
+    }
+    20% {
+        left: 720px;
+        top: 300;
+    }
+    25% {
+        left: 300px;
+        top: 140px;
+
+    }
+    30% {
+        
+
+    }
+    35% {
+
+    }
+    40% {
+
+    }
+    45% {
+
+    }
+    50% {
+
+    }
+    55% {
+
+    }
+    60% {
+
+    }
+    65% {
+
+    }
+    70% {
+
+    }
+    75% {
+
+    }
+    80% {
+
+    }
+    85% {
+
+    }
+    90% {
+
+    }
+    95% {
+
+    }
+    100% {
+        left: 980px;
+        right: 530px;
+    }
+}
+
+
+.bey1 img {
+    height: 30px;
+}
+
+.bey2 img {
+    height: 30px;
+}
+
+#spin {
+    height: 50px;
+    width: 160px;
+    border: none;
+    border-radius: 13px;
+    background: rgb(21, 21, 102);
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#spin:hover {
+    background-color: #2f374a;
+}
+
+
+.matchupvs {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.matchupvs img {
+    height: 200px;
+}
+
+#op1 {
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#op2 {
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#verses {
+    font-size: 45px;
+    color: antiquewhite;
+}
+
+
+.op1data {
+    position: fixed;
+    top: 50px;
+}
+.op1data .person1 {
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 95px;
+} 
+.op1data .hisbeyd {
+    font-size: 45px;
+    color: #fff;
+    position: fixed;
+    top: 680px;
+    left: 20px;
+}
+.op1data .per1{
+    height: 500px;
+    position: fixed;
+    top: 100px;
+}
+.op1data .hisbey1 {
+    height: 180px;
+    position: fixed;
+    top: 620px;
+    left: 180px;
+}
+
+/*Break_5*/
+.op2data .person2 {
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 30px;
+    right: 95px;
+} 
+.op2data .hisbey2 {
+    font-size: 45px;
+    color: #fff;
+    position: fixed;
+    top: 680px;
+    right: 20px;
+}
+
+.op2data .per2{
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    right: -10px;
+}
+.op2data .hisbey2 {
+    height: 180px;
+    position: fixed;
+    top: 620px;
+    right: 250px;
+}
+
+.op2data .hisbeyd2 {
+    font-size: 45px;
+    color: #fff;
+    position: fixed;
+    top: 680px;
+    right: 70px;
+}
+
+.ctrlbtns button{
+    height: 40px;
+    width: 150px;
+    border: 2px solid blue;
+    border-radius: 12px;
+    font-size: 22px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ctrlbtns .closebattleups {
+    background-color: rgb(235, 81, 81);
+    border: 2px solid red;
+    color: #fff;
+}
+
+.ctrlbtns .closebattleups:hover {
+    background: rgb(255, 41, 41);
+}
+
+.ctrlbtns .startBattling {
+    background-color: rgb(61, 184, 50);
+    border: 2px solid rgb(0, 107, 0);
+    color: #fff;
+}
+
+.ctrlbtns .startBattling:hover {
+    background: rgb(6, 80, 10);
+}
+
+
+#startBtl {
+    height: 50px;
+    width: 160px;
+    border: none;
+    border-radius: 13px;
+    background: rgb(21, 21, 102);
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#startBtl:hover {
+    background-color: #2f374a;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyblade-Battle</title>
+</head>
+<body>
+    <div class="stadium">
+        <div class="oval-part" id="oval">
+        </div>
+        <div class="beybowl" id="beybowl">
+        </div>
+        <div class="inner-bowl" id="innerbowl"></div>
+        <div class="line-1" id="line1"></div>
+        <div class="line-2" id="line2"></div>
+        <div class="circle" id="circle"></div>
+        <div class="lane-1" id="lane1"><i class="fa fa-dot-circle-o"></i></div>
+        <div class="lane-2" id="lane2"><i class="fa fa-dot-circle-o"></i></div>
+    </div>
+    <div class="functionalities">
+        <button class="powerbtn" id="powerbtn" title="Power's On the The Whole Thing"><i class="fa fa-power-off"></i>  Power On</button>
+    </div>
+    <button class="openSidemenu" id="menuBtn">Menu</button>
+    <div class="sidemenu" id="contmenu">
+        <br>
+        <button class="closemenu" id="closemenu"><i class="fa fa-close"></i> Close</button><br><br>
+        <h4 style="color: #fff;">Select a Beyblade - 1 | You Chose <span id="selected1" style="font-size: 30px; color: rgb(225, 223, 255);">Nothing</span></h4>
+        <div class="beys1">
+            <div class="valkrey1" id="val1">
+                <img src="valkrey.png" alt=""><p>- Valkyrie</p>
+            </div>
+            <div class="fafnir1" id="faf1">
+                <img src="fafnir.png" alt=""><p>- Fafnir</p>
+            </div>
+            <div class="spryzen1" id="spr1">
+                <img src="spryzen.png" alt=""><p>- Spryzen</p>
+            </div>
+            <div class="luinor1" id="lui1">
+                <img src="luinor.png" alt=""><p>- Luinor</p>
+            </div>
+            <div class="achilles1" id="ach1">
+                <img src="achilles.png" alt=""><p>- Achilles</p>
+            </div>
+            <div class="helios1" id="hel1">
+                <img src="helios.png" alt=""><p>- Helios</p>
+            </div>
+            <div class="hyperion1" id="hyp1">
+                <img src="phoenix.png" alt=""><p>- Phoenix</p>
+            </div>
+            <div class="salamander1" id="sal1">
+                <img src="salamander.png" alt=""><p>- Salamandar</p>
+            </div>
+        </div>
+        <h4 style="color: #fff;">Select a Beyblade - 2 | You Chose <span id="selected2" style="font-size: 30px; color: rgb(225, 223, 255);">Nothing</span></h4>
+        <br>
+        <div class="beys">
+            <div class="valkrey" id="val2">
+                <img src="valkrey.png" alt=""><p>- Valkyrie</p>
+            </div>
+            <div class="fafnir" id="faf2">
+                <img src="fafnir.png" alt=""><p>- Fafnir</p>
+            </div>
+            <div class="spryzen" id="spr2">
+                <img src="spryzen.png" alt=""><p>- Spryzen</p>
+            </div>
+            <div class="luinor" id="lui2">
+                <img src="luinor.png" alt=""><p>- Luinor</p>
+            </div>
+            <div class="achilles" id="ach2">
+                <img src="achilles.png" alt=""><p>- Achilles</p>
+            </div>
+            <div class="helios" id="hel2">
+                <img src="helios.png" alt=""><p>- Helios</p>
+            </div>
+            <div class="hyperion" id="hyp2">
+                <img src="phoenix.png" alt=""><p>- Phoenix</p>
+            </div>
+            <div class="salamander" id="sal2">
+                <img src="salamander.png" alt=""><p>- Salamandar</p>
+            </div>
+        </div>
+    </div>
+    <div class="battle">
+        <div class="bey1">
+            <img src="beybladeburst.png" alt="" id="beyblade1">
+        </div>
+        <div class="bey2">
+            <img src="beybladeburst.png" alt="" id="beyblade2">
+        </div>
+        <button id="spin">Start Spinning</button>
+        <button class="startBattle" id="startBtl">Start Battle</button>
+    </div>
+    <div class="matchupvs" id="matchups">
+        <br><br><br>
+        <center><img src="beybladeburst.png" alt=""></center>
+        <br><br>
+        <center><span id="op1">Oponent 1</span></center><br><br>
+        <center>
+                <span id="verses">VS</span>
+            </center><br>
+        <center>
+                <span id="op2">Oponent 2</span>
+            </center><br>
+        <div class="data">
+            <div class="op1data">
+                <span class="person1" id="person1">Selcted None</span>
+                <img src="" class="per1" id="per1">
+                <span class="hisbeyd" id="hisbeyt">Go back and select Beyblades</span>
+                <img src="" alt="" class="hisbey1" id="hisbeyi">
+            </div>
+        </div>
+        <div class="op2data">
+            <span class="person2" id="person2">Selected None</span>
+            <img src="" class="per2" id="per2">
+            <span class="hisbeyd2" id="hisbeyt2">go back and select Beyblades</span>
+            <img src="" alt="" class="hisbey2" id="hisbeyi2">
+        </div>
+        <div class="ctrlbtns">
+        <center><button class="closebattleups" id="closebattleups">Close</button><button class="startBattling" id="startbattling">Start Battle</button></center>
+        </div>
+    </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
